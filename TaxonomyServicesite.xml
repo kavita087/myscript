@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appcmd>
+    <SITE SITE.NAME="TaxonomyService" SITE.ID="5" bindings="http/*:80:taxonomy-dev.visiblealpha.com" state="Started">
+        <site name="TaxonomyService" id="5" serverAutoStart="true">
+            <bindings>
+                <binding protocol="http" bindingInformation="*:80:taxonomy-dev.visiblealpha.com" />
+            </bindings>
+            <limits />
+            <logFile>
+                <customFields>
+                </customFields>
+            </logFile>
+            <traceFailedRequestsLogging />
+            <applicationDefaults />
+            <virtualDirectoryDefaults />
+            <ftpServer>
+                <connections />
+                <security>
+                    <dataChannelSecurity />
+                    <commandFiltering>
+                    </commandFiltering>
+                    <ssl />
+                    <sslClientCertificates />
+                    <authentication>
+                        <anonymousAuthentication />
+                        <basicAuthentication />
+                        <clientCertAuthentication />
+                        <customAuthentication>
+                            <providers>
+                            </providers>
+                        </customAuthentication>
+                    </authentication>
+                    <customAuthorization>
+                        <provider />
+                    </customAuthorization>
+                </security>
+                <customFeatures>
+                    <providers>
+                    </providers>
+                </customFeatures>
+                <messages />
+                <fileHandling />
+                <firewallSupport />
+                <userIsolation>
+                    <activeDirectory />
+                </userIsolation>
+                <directoryBrowse />
+                <logFile />
+            </ftpServer>
+            <application path="/" applicationPool="TaxonomyService">
+                <virtualDirectoryDefaults />
+                <virtualDirectory path="/" physicalPath="C:\deployment\TaxonomyService" />
+            </application>
+        </site>
+    </SITE>
+</appcmd>
